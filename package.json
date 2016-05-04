@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ocalvet/morse-code-js#readme",
   "devDependencies": {
-    "browser-sync": "^2.12.5"
+    "browser-sync": "^2.12.5",
+    "jspm": "^0.16.34"
   }
 }
