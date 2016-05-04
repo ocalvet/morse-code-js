@@ -1,9 +1,14 @@
+import Rx from 'rx';
+
 export class App {
-  constructor() {
-    console.log('application created');
+  constructor(document) {
+    this.document = document;
   }
 
   initialize() {
-    console.log('application initialized');
+    let button = this.document.getElementById('code-btn');
+    const values$ = Rx.Observable
+      .fromEvent(button, 'click')
+      .subscribe((event) => console.log('event ', event));
   }
 }
