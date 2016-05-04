@@ -1,0 +1,19 @@
+{
+  "name": "morse-code-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocalvet/morse-code-js.git"
+  },
+  "author": "Ovidio R. Calvet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ocalvet/morse-code-js/issues"
+  },
+  "homepage": "https://github.com/ocalvet/morse-code-js#readme"
+}
