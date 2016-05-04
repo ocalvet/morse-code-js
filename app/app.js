@@ -1,4 +1,4 @@
-export default class {
+export class App {
   constructor() {
     console.log('application created');
   }

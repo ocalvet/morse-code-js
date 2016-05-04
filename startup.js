@@ -1,5 +1,5 @@
-System.import('app/app').then(App  => {
-  let app = new App();
+System.import('app/app').then(application  => {
+  let app = new application.App();
   app.initialize();
   console.log('app started')
 });
