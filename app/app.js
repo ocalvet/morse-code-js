@@ -8,13 +8,21 @@ export class App {
   initialize() {
     // Get a reference to the button 
     let button = this.document.getElementById('code-btn');
+    
+    let longClick$ = Rx.Observable.fromEvent(button, 'mousedown')
+        .flatMap((e) => {
+            return Rx.Observable
+                .return(e)
+                .delay(200)
+                .takeUntil(Rx.Observable.fromEvent(button, 'mouseup'))
+        });
+    
+    longClick$.subscribe((l) => {
+        longclicked = true;
+    });
+    
     const values$ = Rx.Observable
       .fromEvent(button, 'mousedown')
-      .delay(300)
-      .takeUntil(button, 'mouseup')
-      .subscribe(
-          (event) => console.log('event ', event), 
-          (error) => console.log(error)
-      );
+    
   }
 } 
